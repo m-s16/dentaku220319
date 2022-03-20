@@ -1,0 +1,135 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 239, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "電卓220319"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "終了",IDOK,131,197,50,14
+    EDITTEXT        IDC_EDIT1,68,27,113,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "1",IDC_BUTTON1,92,130,16,14
+    PUSHBUTTON      "2",IDC_BUTTON2,117,130,16,14
+    PUSHBUTTON      "3",IDC_BUTTON3,141,130,16,14
+    PUSHBUTTON      "4",IDC_BUTTON4,92,110,16,14
+    PUSHBUTTON      "5",IDC_BUTTON5,117,110,16,14
+    PUSHBUTTON      "6",IDC_BUTTON6,141,110,16,14
+    PUSHBUTTON      "7",IDC_BUTTON7,92,92,16,14
+    PUSHBUTTON      "8",IDC_BUTTON8,117,92,16,14
+    PUSHBUTTON      "9",IDC_BUTTON9,141,92,16,14
+    PUSHBUTTON      "+",IDC_BUTTON10,165,129,16,32
+    PUSHBUTTON      "0",IDC_BUTTON11,92,147,16,14
+    PUSHBUTTON      ".",IDC_BUTTON12,117,147,16,14
+    PUSHBUTTON      "-",IDC_BUTTON13,165,110,16,14
+    PUSHBUTTON      "×",IDC_BUTTON14,165,92,16,14
+    PUSHBUTTON      "÷",IDC_BUTTON15,165,73,16,14
+    PUSHBUTTON      "=",IDC_BUTTON16,141,147,16,14
+    PUSHBUTTON      "c",IDC_BUTTON17,67,110,16,14
+    PUSHBUTTON      "ac",IDC_BUTTON18,67,129,16,14
+    PUSHBUTTON      "+/-",IDC_BUTTON19,68,92,16,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        VERTGUIDE, 68
+        VERTGUIDE, 92
+        VERTGUIDE, 117
+        VERTGUIDE, 141
+        VERTGUIDE, 165
+        VERTGUIDE, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+        HORZGUIDE, 106
+        HORZGUIDE, 124
+        HORZGUIDE, 143
+        HORZGUIDE, 161
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
