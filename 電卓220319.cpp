@@ -17,18 +17,18 @@ INT_PTR CALLBACK DialogProc
 
 int APIENTRY WinMain
 (HINSTANCE hInstance
-	, HINSTANCE
-	, LPSTR lpCmdLine
-	, int nCmdShow
+    , HINSTANCE
+    , LPSTR lpCmdLine
+    , int nCmdShow
 )
 {
-	DialogBoxParamA(hInstance
-		, MAKEINTRESOURCEA(IDD_DIALOG1)
-		, nullptr
-		, DialogProc
-		, 0
-	);
-	return 0;
+    DialogBoxParamA(hInstance
+        , MAKEINTRESOURCEA(IDD_DIALOG1)
+        , nullptr
+        , DialogProc
+        , 0
+    );
+    return 0;
 }
 
 INT_PTR CALLBACK DialogProc(HWND hDlg, UINT msg, WPARAM wp, LPARAM lp)
@@ -51,6 +51,8 @@ INT_PTR CALLBACK DialogProc(HWND hDlg, UINT msg, WPARAM wp, LPARAM lp)
         case IDOK:
             EndDialog(hDlg, 0);
             return TRUE;
+        case IDCANCEL:
+            EndDialog(hDlg, IDCANCEL);
         case IDC_BUTTON17:
             memset(str[mode], '\0', sizeof(str[mode]));
             Edit_SetText(hEWnd, str[mode]);
@@ -63,7 +65,7 @@ INT_PTR CALLBACK DialogProc(HWND hDlg, UINT msg, WPARAM wp, LPARAM lp)
             return TRUE;
         case IDC_BUTTON12:
 
-            lstrcat(str[mode],  TEXT("."));
+            lstrcat(str[mode], TEXT("."));
             Edit_SetText(hEWnd, str[mode]);
             return TRUE;
         case IDC_BUTTON1:
@@ -127,8 +129,8 @@ INT_PTR CALLBACK DialogProc(HWND hDlg, UINT msg, WPARAM wp, LPARAM lp)
             Edit_SetText(hEWnd, TEXT("ÅÄ"));
             return TRUE;
         case IDC_BUTTON19:
-            lstrcpy(tmp,  TEXT("-"));
-            lstrcpy(tmp,  str[mode]);
+            lstrcpy(tmp, TEXT("-"));
+            lstrcpy(tmp, str[mode]);
             lstrcpy(str[mode], tmp);
             Edit_SetText(hEWnd, str[mode]);
             return TRUE;
