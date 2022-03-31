@@ -1,9 +1,9 @@
 #include <Windows.h>
 #include <windowsx.h>
 #include <tchar.h>
-#include <string.h> //memset, strcat, strcpy
-#include <stdio.h> //sprintf
-#include <math.h> //atof
+#include <string.h> 
+#include <stdio.h> 
+#include <math.h> 
 #include <stdlib.h>
 #include "resource.h"
 
@@ -22,8 +22,9 @@ int APIENTRY WinMain
     , int nCmdShow
 )
 {
-    DialogBoxParamA(hInstance
-        , MAKEINTRESOURCEA(IDD_DIALOG1)
+    DialogBoxParamW
+    (hInstance
+        , MAKEINTRESOURCEW(IDD_DIALOG1)
         , nullptr
         , DialogProc
         , 0
@@ -35,10 +36,10 @@ INT_PTR CALLBACK DialogProc(HWND hDlg, UINT msg, WPARAM wp, LPARAM lp)
 {
     static TCHAR str[2][32], ans_str[32], tmp[32];
 
-    static HWND hEWnd; //エジットボックスのウィンドウハンドル
+    static HWND hEWnd; 
     static double ans;
     enum { plus, minus, kake, wari };
-    static int op, mode; //op:演算の種類　mode:演算子の前か後ろか
+    static int op, mode; 
 
     switch (msg) {
     case WM_INITDIALOG:
